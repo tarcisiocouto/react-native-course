@@ -4,15 +4,11 @@ import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
 const HomeScreen = ({ navigation }) => {
   return (
       <View>
-        <Text style={styles.text}>Hi Tarcisio!</Text>
+        <Text style={styles.text}>Hi There!</Text>
         <Button 
           onPress={() => navigation.navigate('Components')}
           title="Go to Components Demo"
         />
-        <TouchableOpacity onPress={() => navigation.navigate('List')}>
-          <Text>Go to List Demo</Text>
-        </TouchableOpacity>
-        <Text style={styles.text}>Exercices</Text>
         <Button 
           title="Go to Components Exercice"
           onPress={() => navigation.navigate('ExerciceComponents')}
@@ -36,6 +32,10 @@ const HomeScreen = ({ navigation }) => {
         <Button 
           title="Go to Square Demo"
           onPress={() => navigation.navigate('Square')}
+        />
+         <Button 
+          title="Go to Text Demo"
+          onPress={() => navigation.navigate('Text')}
         />
       </View>
     );
